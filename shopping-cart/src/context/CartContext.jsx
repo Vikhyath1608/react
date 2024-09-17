@@ -1,22 +1,27 @@
-import { Children, createContext, createContext } from "react";
+import { createContext, useReducer } from "react";
 import { cartReducer } from "../reducer/cartReducer";
 
-const createContext=createContext();
-const CartProvider=({Children})=>
-{
-    const [cart,dispatch]=userReducer(cartReducer,)
-    const addToCart=(item)=>
-    {
-        dispatch({type:"ADD_ITEM",payload:item});
+
+const CartContext = createContext();
+
+const CartProvider= ({ children }) => {
+    const [cart, dispatch] = useReducer(cartReducer, []);
+
+    //lets add functions to add and remove cart item
+    const addToCart = (item) => {
+        dispatch({ type: 'ADD_ITEM', payload: item });
     };
-    const removeFromCart=(id)=>
-    {
-        dispatch({type:'REMOVE_ITEM',payload:{id}};)
+
+    const removeFromCart = (id) => {
+        dispatch({ type: 'REMOVE_ITEM', payload: { id } });
     };
+
     return (
-        <context.Provider value={{cart,addToCart,removeFromCart}}>
-            {Children}
-        </context.Provider>
+        <CartContext.Provider 
+            value={{cart, addToCart, removeFromCart}}>
+            {children}
+        </CartContext.Provider>
     );
-}
-export {createContext,CartProvider};
+};
+
+export { CartContext, CartProvider};
