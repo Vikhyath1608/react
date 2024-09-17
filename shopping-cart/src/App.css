@@ -1,22 +1,104 @@
-.App {
-  text-align: center;
-  background-color: rgb(115, 134, 194);
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: rgb(rgb(199, 3, 3), green, blue);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-button
-{
-  background-color: rgb(224, 222, 228);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-body
-{
-  background-image: url("https://img.freepik.com/free-photo/black-friday-elements-assortment_23-2149074075.jpg?t=st=1726549943~exp=1726553543~hmac=1c32b60fe6063dd9149687f70e4ec107188ace21bedacdb2d8da4599c1eb4a91&w=1060");
-  background-color: #cccccc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60vh;
 
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+ 
+}
+
+.App {
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.cart-container {
+  margin-top: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item h4 {
+  margin: 0;
+}
+
+.cart-item .remove-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-item .remove-btn:hover {
+  background-color: #c82333;
+}
+
+.cart-total {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: right;
 }
