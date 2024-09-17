@@ -1,38 +1,22 @@
 .App {
   text-align: center;
+  background-color: rgb(115, 134, 194);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: rgb(rgb(199, 3, 3), green, blue);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button
+{
+  background-color: rgb(224, 222, 228);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body
+{
+  background-image: url("https://img.freepik.com/free-photo/black-friday-elements-assortment_23-2149074075.jpg?t=st=1726549943~exp=1726553543~hmac=1c32b60fe6063dd9149687f70e4ec107188ace21bedacdb2d8da4599c1eb4a91&w=1060");
+  background-color: #cccccc;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  align-items: center;
+  height: 60vh;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
